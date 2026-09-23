@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serene — Бесплатный шаблон сайта спа и велнеса от uiCookies</title>
+<meta name="description" content="Serene — бесплатный одностраничный шаблон сайта спа и велнеса на Bootstrap 5: спокойный дизайн, меню процедур, форма записи, галерея и раздел с командой.">
+<meta name="theme-color" content="#22303b">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Serene — Бесплатный шаблон сайта спа и велнеса">
+<meta property="og:description" content="Спокойный, при свечах, одностраничный шаблон на Bootstrap 5 для спа, салонов и велнес-студий.">
+<meta property="og:image" content="img/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..500;1,9..144,300..500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+
+<header class="site-header" id="siteHeader">
+<nav class="nav" aria-label="Основная навигация">
+<a class="brand" href="#top" aria-label="Serene — на главную">
+<span class="brand-mark">&#10086;</span>Serene<small>дневное спа</small>
+</a>
+<ul class="nav-links" id="navLinks">
+<li><a href="#services">Процедуры</a></li>
+<li><a href="#about">Наш ритуал</a></li>
+<li><a href="#gallery">Пространства</a></li>
+<li><a href="#team">Мастера</a></li>
+<li><a href="#visit">Как добраться</a></li>
+<li><a href="#book">Запись</a></li>
+</ul>
+<div class="nav-cta">
+<a class="nav-phone" href="tel:+14155550147" aria-label="Позвонить в спа">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3.1-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+(415) 555-0147
+</a>
+<a class="btn" href="#book">Записаться</a>
+<button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="navLinks">
+<span></span>
+</button>
+</div>
+</nav>
+</header>
+
+<main id="main">
+<span id="top"></span>
+
+<section class="hero" aria-label="Добро пожаловать в Serene Day Spa">
+<div class="hero__bg">
+<img src="img/hero.jpg" alt="Мягко освещённый кабинет спа с тёплыми полотенцами и зажжёнными свечами" fetchpriority="high">
+</div>
+<div class="hero__inner wrap">
+<div class="hero__grid">
+<div class="hero__copy">
+<span class="eyebrow">Тихое место, чтобы выдохнуть</span>
+<h1 class="hero__title">Расслабьтесь, восстановитесь, <em>вернитесь к себе.</em></h1>
+<p class="hero__lede">Serene — это дневное спа при свечах в квартале Эшборн: массаж, уход за кожей и неспешные телесные ритуалы, выстроенные вокруг того, как вы чувствуете себя сегодня.</p>
+<div class="hero__actions">
+<a class="btn" href="#book">
+Забронировать процедуру
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</a>
+<a class="btn btn--light" href="#services">Смотреть меню</a>
+</div>
+</div>
+<div class="hero__side" aria-hidden="true">Осн. <span>2014</span> &nbsp;/&nbsp; Квартал Эшборн</div>
+</div>
+<div class="hero__strip reveal">
+<div class="hero__stat"><b>12</b><span>ритуалов ухода</span></div>
+<div class="hero__stat"><b>9</b><span>мастеров-терапевтов</span></div>
+<div class="hero__stat"><b>4.9</b><span>рейтинг гостей</span></div>
+<div class="hero__stat"><b>11</b><span>лет спокойствия</span></div>
+</div>
+</div>
+</section>
+
+<section class="section" id="services" aria-labelledby="services-title">
+<div class="wrap">
+<div class="section-head reveal">
+<span class="eyebrow">Меню процедур</span>
+<h2 class="section-title" id="services-title">Ритуалы, измеряемые <em>вдохами,</em> а не минутами.</h2>
+<p class="lede">Каждая процедура начинается с тёплого очищения стоп и короткой консультации, чтобы давление, масла и темп были подобраны под вас. Выберите категорию ниже.</p>
+</div>
+<div class="menu-tabs reveal" role="tablist" aria-label="Категории процедур">
+<button class="menu-tab is-active" data-filter="all" role="tab" aria-selected="true">Все</button>
+<button class="menu-tab" data-filter="massage" role="tab" aria-selected="false">Массаж</button>
+<button class="menu-tab" data-filter="facial" role="tab" aria-selected="false">Уход за лицом</button>
+<button class="menu-tab" data-filter="body" role="tab" aria-selected="false">Ритуалы для тела</button>
+<button class="menu-tab" data-filter="wellness" role="tab" aria-selected="false">Велнес</button>
+</div>
+<div class="menu-grid reveal" id="menuGrid">
+<div class="menu-item" data-cat="massage">
+<div class="menu-item__head"><span class="menu-item__name">Глубокий отдых с ароматерапией</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$118</span>
+<p class="menu-item__meta">Медленный массаж всего тела со смесью лаванды, кедра и сладкого апельсина, чтобы успокоить перегруженную нервную систему.</p>
+<div class="menu-item__tags"><span class="chip">75 мин</span><span class="chip">Среднее давление</span></div>
+</div>
+<div class="menu-item" data-cat="massage">
+<div class="menu-item__head"><span class="menu-item__name">Глубокий массаж тканей</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$132</span>
+<p class="menu-item__meta">Прицельная работа по спине, плечам и бёдрам для зажимов, которые явно задержались дольше, чем нужно.</p>
+<div class="menu-item__tags"><span class="chip">60 мин</span><span class="chip">Сильное давление</span></div>
+</div>
+<div class="menu-item" data-cat="massage">
+<div class="menu-item__head"><span class="menu-item__name">Тёплые базальтовые камни</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$146</span>
+<p class="menu-item__meta">Нагретые вулканические камни скользят вдоль позвоночника, растворяя напряжение, которого вы уже перестали замечать.</p>
+<div class="menu-item__tags"><span class="chip">80 мин</span><span class="chip">Мягкое тепло</span></div>
+</div>
+<div class="menu-item" data-cat="facial">
+<div class="menu-item__head"><span class="menu-item__name">Сияющая процедура с розовой водой</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$104</span>
+<p class="menu-item__meta">Осветляющий ритуал: энзимное очищение, гуаша и массаж розовым кварцем для уставшей, тусклой кожи.</p>
+<div class="menu-item__tags"><span class="chip">55 мин</span><span class="chip">Для всех типов кожи</span></div>
+</div>
+<div class="menu-item" data-cat="facial">
+<div class="menu-item__head"><span class="menu-item__name">Уход за барьером кожи «Спокойствие»</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$124</span>
+<p class="menu-item__meta">Процедура без ароматизаторов для реактивной, сенсибилизированной кожи: охлаждающие шарики, овсяная маска и много тишины.</p>
+<div class="menu-item__tags"><span class="chip">65 мин</span><span class="chip">Чувствительная кожа</span></div>
+</div>
+<div class="menu-item" data-cat="body">
+<div class="menu-item__head"><span class="menu-item__name">Морская соль для тела</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$96</span>
+<p class="menu-item__meta">Отшелушивание минеральной солью с последующим обёртыванием взбитым маслом ши, после которого кожа невероятно мягкая.</p>
+<div class="menu-item__tags"><span class="chip">50 мин</span><span class="chip">Отшелушивание</span></div>
+</div>
+<div class="menu-item" data-cat="body">
+<div class="menu-item__head"><span class="menu-item__name">Обёртывание «Кокон» с глиной</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$128</span>
+<p class="menu-item__meta">Тёплая минеральная глина, массаж головы и неподвижность — полная перезагрузка в льне и тепле.</p>
+<div class="menu-item__tags"><span class="chip">70 мин</span><span class="chip">Детокс</span></div>
+</div>
+<div class="menu-item" data-cat="wellness">
+<div class="menu-item__head"><span class="menu-item__name">Сеанс рейки и дыхания</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$88</span>
+<p class="menu-item__meta">Мягкая энергетическая работа в сочетании с управляемым дыханием, чтобы успокоить бегущие мысли перед сном или важной неделей.</p>
+<div class="menu-item__tags"><span class="chip">45 мин</span><span class="chip">Без масел</span></div>
+</div>
+<div class="menu-item" data-cat="wellness">
+<div class="menu-item__head"><span class="menu-item__name">Ретрит на полдня</span><span class="menu-item__dots" aria-hidden="true"></span></div>
+<span class="menu-item__price">$268</span>
+<p class="menu-item__meta">Массаж, уход за лицом, ванна и чай у камина — три неспешных часа полностью вне графика.</p>
+<div class="menu-item__tags"><span class="chip">3 ч</span><span class="chip">Фирменный</span></div>
+</div>
+</div>
+<p class="menu-note reveal">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1"/></svg>
+Доступны кабинеты для пар и подарочные карты. В цены включены чаевые и травяной чай в завершение.
+</p>
+</div>
+</section>
+
+<section class="section section--mist" id="about" aria-labelledby="about-title">
+<div class="wrap">
+<div class="about-grid">
+<div class="about-figure reveal">
+<div class="arch"><img src="img/about.jpg" alt="Терапевт раскладывает свежие цветы и свёрнутые полотенца рядом с кушеткой"></div>
+<div class="about-badge">
+<span class="about-badge__ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3c1.5 3 4 4 4 7a4 4 0 0 1-8 0c0-3 2.5-4 4-7z"/><path d="M12 14v7M8 21h8"/></svg></span>
+<div><b>Чистые формулы</b><span>Только cruelty-free средства с низким содержанием ароматизаторов</span></div>
+</div>
+</div>
+<div class="about-copy reveal d1">
+<span class="eyebrow">Наш ритуал</span>
+<h2 class="section-title" id="about-title">Забота, которая замедляется под ваш темп.</h2>
+<p class="lede">Serene началось в 2014 году с одной мысли: отдых — не роскошь, которую нужно заслужить, а поддержка. Всё здесь — приглушённый свет, лён, неторопливые руки — создано, чтобы помочь вам сбросить скорость.</p>
+<ul class="pillars">
+<li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Сначала консультация</b><p>Мы спрашиваем до начала и корректируем давление, масла и темп по ходу.</p></div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Меньше записей — больше пространства</b><p>Мы оставляем буферное время между гостями, чтобы ни одна процедура не была в спешке.</p></div></li>
+<li><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span><div><b>Средства, которые можно съесть</b><p>Растительные, cruelty-free и достаточно мягкие даже для реактивной кожи.</p></div></li>
+</ul>
+<p class="signature">Наоми Вэнс<small>Основатель и ведущий терапевт</small></p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="gallery" aria-labelledby="gallery-title">
+<div class="wrap">
+<div class="section-head section-head--center reveal">
+<span class="eyebrow eyebrow--center">Внутри Serene</span>
+<h2 class="section-title" id="gallery-title">Комнаты, похожие на долгий выдох.</h2>
+<p class="lede">Девять отдельных кабинетов, бассейн при свечах и чайный сад — всё в нескольких шагах от шума квартала.</p>
+</div>
+<div class="gallery reveal" id="gallery-grid">
+<figure class="g-tall" data-full="img/g2.jpg"><img src="img/g2.jpg" alt="Массажист работает с плечами гостя в приглушённом свете"><figcaption>Фирменный массажный кабинет</figcaption></figure>
+<figure class="g-wide" data-full="img/g3.jpg"><img src="img/g3.jpg" alt="Композиция гладких базальтовых камней для горячего массажа"><figcaption>Терапия тёплыми камнями</figcaption></figure>
+<figure data-full="img/g1.jpg"><img src="img/g1.jpg" alt="Свеча ручной работы светится на деревянном выступе"><figcaption>Восковые свечи</figcaption></figure>
+<figure data-full="img/g4.jpg"><img src="img/g4.jpg" alt="Средства для ухода и ботаника, разложенные для процедуры для лица"><figcaption>Бар для ухода за лицом</figcaption></figure>
+<figure class="g-wide" data-full="img/philosophy.jpg"><img src="img/philosophy.jpg" alt="Свежие цветы, сложенные полотенца и масла на тележке спа"><figcaption>Чайный сад</figcaption></figure>
+</div>
+</div>
+</section>
+
+<section class="section booking" id="book" aria-labelledby="book-title">
+<div class="wrap">
+<div class="booking-grid">
+<div class="booking-copy reveal">
+<span class="eyebrow">Забронируйте время</span>
+<h2 id="book-title">Записаться на процедуру</h2>
+<p>Расскажите, что вам нужно и когда — мы подтвердим мастера и закрепим кабинет в течение нескольких часов. Депозит не требуется.</p>
+<ul class="booking-facts">
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Открыто со вторника по воскресенье, по записи</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Пожалуйста, приходите на 15 минут раньше, чтобы освоиться</li>
+<li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>Бесплатный перенос не позднее чем за 24 часа</li>
+</ul>
+</div>
+<div class="form-card reveal d1">
+<form id="bookingForm" novalidate>
+<div class="form-grid">
+<div class="field">
+<label for="bf-name">Имя <span class="req" aria-hidden="true">*</span></label>
+<input type="text" id="bf-name" name="name" autocomplete="name" required placeholder="Ваше полное имя">
+<span class="error-msg">Пожалуйста, укажите ваше имя.</span>
+</div>
+<div class="field">
+<label for="bf-phone">Телефон <span class="req" aria-hidden="true">*</span></label>
+<input type="tel" id="bf-phone" name="phone" autocomplete="tel" required placeholder="(415) 555-0000">
+<span class="error-msg">Номер, по которому мы сможем с вами связаться.</span>
+</div>
+<div class="field field--full">
+<label for="bf-email">Email <span class="req" aria-hidden="true">*</span></label>
+<input type="email" id="bf-email" name="email" autocomplete="email" required placeholder="you@example.com">
+<span class="error-msg">Пожалуйста, введите корректный адрес email.</span>
+</div>
+<div class="field">
+<label for="bf-service">Процедура <span class="req" aria-hidden="true">*</span></label>
+<select id="bf-service" name="service" required>
+<option value="" disabled selected>Выберите ритуал</option>
+<option>Глубокий отдых с ароматерапией</option>
+<option>Глубокий массаж тканей</option>
+<option>Тёплые базальтовые камни</option>
+<option>Сияющая процедура с розовой водой</option>
+<option>Уход за барьером кожи «Спокойствие»</option>
+<option>Морская соль для тела</option>
+<option>Обёртывание «Кокон» с глиной</option>
+<option>Сеанс рейки и дыхания</option>
+<option>Ретрит на полдня</option>
+</select>
+<span class="error-msg">Выберите процедуру, чтобы продолжить.</span>
+</div>
+<div class="field">
+<label for="bf-date">Дата <span class="req" aria-hidden="true">*</span></label>
+<input type="date" id="bf-date" name="date" required>
+<span class="error-msg">Выберите день (вт–вс).</span>
+</div>
+<div class="field">
+<label for="bf-time">Удобное время</label>
+<select id="bf-time" name="time">
+<option value="" disabled selected>Любое время</option>
+<option>Утро (10–12)</option>
+<option>День (12–16)</option>
+<option>Вечер (16–20)</option>
+</select>
+</div>
+<div class="field">
+<label for="bf-guests">Гостей</label>
+<select id="bf-guests" name="guests">
+<option>Только я</option>
+<option>Двое (кабинет для пар)</option>
+<option>Небольшая группа</option>
+</select>
+</div>
+<div class="field field--full">
+<label for="bf-notes">Что нам стоит знать?</label>
+<textarea id="bf-notes" name="notes" placeholder="Травмы, аллергии, беременность или то, каким был ваш день…"></textarea>
+</div>
+<div class="form-status" id="formStatus" role="status" aria-live="polite">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+<span>Спасибо — заявка отправлена. Мы скоро позвоним, чтобы подтвердить мастера.</span>
+</div>
+<div class="form-submit">
+<button type="submit" class="btn">Запросить запись<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" id="team" aria-labelledby="team-title">
+<div class="wrap">
+<div class="section-head section-head--center reveal">
+<span class="eyebrow eyebrow--center">Ваши мастера</span>
+<h2 class="section-title" id="team-title">Уверенные руки, тихая компания.</h2>
+<p class="lede">Каждый мастер в Serene имеет лицензию, бесконечно добр и обучен читать потребности тела раньше, чем вы найдёте слова.</p>
+</div>
+<div class="team-grid">
+<article class="therapist reveal">
+<div class="therapist__photo arch">
+<img src="img/team1.jpg" alt="Наоми Вэнс, основатель и ведущий массажист">
+<div class="therapist__social" aria-label="Ссылки Наоми">
+<a href="#book" aria-label="Записаться к Наоми"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+<a href="#" aria-label="Наоми в Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<h3>Наоми Вэнс</h3>
+<p class="role">Основатель &middot; Массаж</p>
+<p>Пятнадцать лет глубокого массажа тканей и ароматерапии. Считает, что лучшая процедура — та, во время которой вы почти уснули.</p>
+</article>
+<article class="therapist reveal d1">
+<div class="therapist__photo arch">
+<img src="img/team2.jpg" alt="Прия Ананд, специалист по уходу за лицом и кожей">
+<div class="therapist__social" aria-label="Ссылки Прии">
+<a href="#book" aria-label="Записаться к Прии"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+<a href="#" aria-label="Прия в Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<h3>Прия Ананд</h3>
+<p class="role">Уход за лицом &middot; Кожа</p>
+<p>Одержима барьером кожи и успокаивает реактивные, уставшие лица охлаждающими шариками и тишиной. Мастер гуаша.</p>
+</article>
+<article class="therapist reveal d2">
+<div class="therapist__photo arch">
+<img src="img/team3.jpg" alt="Элиас Торн, специалист по телесной работе и рейки">
+<div class="therapist__social" aria-label="Ссылки Элиаса">
+<a href="#book" aria-label="Записаться к Элиасу"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></a>
+<a href="#" aria-label="Элиас в Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></a>
+</div>
+</div>
+<h3>Элиас Торн</h3>
+<p class="role">Телесная работа &middot; Рейки</p>
+<p>Сочетает медленную телесную работу с дыханием и энергетической практикой. Тот, к кому идти, когда плечи живут у самых ушей.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section class="section section--mist" id="reviews" aria-labelledby="reviews-title">
+<div class="wrap">
+<div class="section-head section-head--center reveal">
+<span class="eyebrow eyebrow--center">Добрые слова</span>
+<h2 class="section-title" id="reviews-title">Что гости уносят с собой.</h2>
+</div>
+<div class="quotes reveal">
+<div class="quotes__mark" aria-hidden="true">&ldquo;</div>
+<div class="quotes__track" id="quotesTrack">
+<blockquote class="quote is-active">
+<div class="quote__stars" aria-label="5 из 5 звёзд"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg></div>
+<p>Я пришла такой зажатой, что едва могла повернуть голову. Наоми нашла каждый узел, хотя я не сказала ни слова. Ушла другим человеком.</p>
+<div class="quote__who">Мариэль Окоро<span>Глубокий массаж тканей</span></div>
+</blockquote>
+<blockquote class="quote">
+<div class="quote__stars" aria-label="5 из 5 звёзд"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 7 .8-5.2 4.8L18 21l-6-3.4L6 21l1.2-6.9L2 9.3l7-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 2 3 6.5 
